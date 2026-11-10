@@ -4,10 +4,12 @@
 
 本程序配套使用 **[hectorqin/reader](https://github.com/hectorqin/reader)**，是独立的 Windows 客户端。在线功能对接该项目的 [`/api/v1` 接口](https://github.com/hectorqin/reader/blob/main/docs/api.md)。旧版 `/reader3` 接口需要先升级服务端。
 
+本程序非常简单，如果对于Reader很熟悉，只需要下载release并导入服务端Reader链接。
+
 ## 下载与运行
 
 - 系统要求为 Windows 10 或 11，安装 .NET Framework 4.8 或更高的 4.x 版本。
-- 从本仓库的 Releases 下载维护者上传的便携 ZIP，解压到有写权限的文件夹，双击 `OneLineReader.exe`。也可以按本文末尾的步骤自行构建。
+- 从本仓库的 Releases 下载便携 ZIP，解压到有写权限的文件夹，双击 `OneLineReader.exe`。也可以按本文末尾的步骤自行构建。
 - 首次启动可以点击“试读示例”。读自己的书时，在“书架”中点击“导入”，选择 TXT 或 EPUB，然后打开书籍。
 - TXT 支持 UTF-8、带 BOM 的 UTF-16 和 GB18030。EPUB 提取可阅读文字和章节目录。图片、PDF 和漫画没有单行正文模式。
 
@@ -85,4 +87,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 | `build.ps1` | 编译与测试入口 |
 | `app.manifest` | Windows 应用清单 |
 
-本版为 **v1.0.4**，首次整理 GitHub 发布目录，并将背景不透明度下限设为 1%。本地与在线阅读使用的进度定位格式见 [Reader locator.ts](https://github.com/hectorqin/reader/blob/main/web/src/ui/locator.ts)。
+本地与在线阅读使用的进度定位格式见 [Reader locator.ts](https://github.com/hectorqin/reader/blob/main/web/src/ui/locator.ts)。
