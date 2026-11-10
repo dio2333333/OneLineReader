@@ -1,0 +1,18 @@
+# Build and release outputs
+/dist/
+/release/
+/update-*/
+*.exe
+*.zip
+*.pdb
+
+# Local configuration, credentials, book files, caches and test data
+data/
+cache/
+books/
+qa-data/
+ui-validation*/
+test-results/
+state.json
+state.json.*
+*.log
